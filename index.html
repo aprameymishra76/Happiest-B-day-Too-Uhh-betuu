@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Betu ❤️</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+    color:white;
+    text-align:center;
+}
+
+.page{
+    display:none;
+    min-height:100vh;
+    padding:40px 20px;
+}
+
+.active{
+    display:block;
+}
+
+.card{
+    background:rgba(255,255,255,0.2);
+    padding:20px;
+    border-radius:15px;
+    max-width:700px;
+    margin:auto;
+}
+
+button{
+    margin:15px;
+    padding:12px 25px;
+    border:none;
+    border-radius:25px;
+    font-size:16px;
+    cursor:pointer;
+    background:white;
+    color:#ff4d88;
+    font-weight:bold;
+}
+
+.gallery img{
+    width:200px;
+    height:200px;
+    object-fit:cover;
+    border-radius:15px;
+    margin:10px;
+}
+
+h1,h2{
+    margin-bottom:20px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- PAGE 1 -->
+<div id="page1" class="page active">
+    <h1>🎂 Happy Birthday Betu ❤️</h1>
+
+    <div class="card">
+        <p>
+            Welcome to your special birthday website.
+            <br><br>
+            Made with lots of love just for you. 💕
+        </p>
+    </div>
+
+    <button onclick="showPage(2)">Next ➜</button>
+</div>
+
+<!-- PAGE 2 -->
+<div id="page2" class="page">
+    <h2>📸 Our Memories</h2>
+
+    <div class="card">
+        <p>Add your photos here later.</p>
+
+        <div class="gallery">
+            <img src="C:/Users\VT 02\Downloads\WhatsApp Image 2026-06-09.jpeg" alt="Memory">
+            <img src="C:/Users/VT 02/Downloads/WhatsApp Image 2026-06-09.jpeg" alt="Memory 1">
+            <img src="C:/Users/VT 02/Downloads/WhatsApp Image 2026-06-09.jpeg" alt="Memory 2">
+        </div>
+    </div>
+
+    <button onclick="showPage(1)">⬅️ Back</button>
+    <button onclick="showPage(3)">Next ➜</button>
+</div>
+
+<!-- PAGE 3 -->
+<div id="page3" class="page">
+    <h2>💌 Love Letter</h2>
+
+    <div class="card">
+        <p>
+           Happy Birthday to the love of my life 💗🎂You are the most beautiful part of my world, the reason behind my smile, and the peace in my heart😌❤️ Every moment with you feels magical, and I'm so lucky to have someone as caring, loving, and special as you✨🫶🏻
+On your special day, I pray that your life is filled with happiness, success, endless love, and all the dreams your heart wishes for🌍💫
+Thank you for loving me, supporting me, and making my life brighter every single day🤌🏻🫶🏻
+No matter what happens, I'll always be there for you, loving you endlessly ♾️💗 Happy Birthday betu 🎉🫶🏻 I love you more than
+words can ever explain..!! 💗🫶🏻💗 ❤️
+        </p>
+    </div>
+
+    <button onclick="showPage(2)">⬅️ Back</button>
+    <button onclick="showPage(4)">Next ➜</button>
+</div>
+
+<!-- PAGE 4 -->
+<div id="page4" class="page">
+    <h2>❤️ Reasons I Love You</h2>
+
+    <div class="card">
+        <p>1. Your smile.</p>
+        <p>2. Your kindness.</p>
+        <p>3. The way you care.</p>
+        <p>4. The way you understand me.</p>
+        <p>5. Because you are you. ❤️</p>
+    </div>
+
+    <button onclick="showPage(3)">⬅️ Back</button>
+    <button onclick="showPage(5)">Next ➜</button>
+</div>
+
+<!-- PAGE 5 -->
+<div id="page5" class="page">
+    <h2>🎁 Open Your Gift</h2>
+
+    <button onclick="document.getElementById('gift').style.display='block'">
+        Open Gift ❤️
+    </button>
+
+    <div id="gift" style="display:none;margin-top:20px;">
+
+        <div style="font-size:70px;">
+            🥰 👫 💕
+        </div>
+
+        <div class="card">
+            <p>
+                I will give you your gift when I come to Sidhi. 🎁
+                <br><br>
+                Till then you have my warm hugs 🤗
+                <br>
+                and lots of kisses 😘😘😘
+                <br><br>
+                ❤️❤️❤️
+            </p>
+        </div>
+
+    </div>
+
+    <button onclick="showPage(4)">⬅️ Back</button>
+    <button onclick="showPage(6)">Next ➜</button>
+</div>
+
+<!-- PAGE 6 -->
+<div id="page6" class="page">
+    <h1>🌷 Final Note 🌷</h1>
+
+    <div class="card">
+        <p>
+            🎂 Happy Birthday Betu ❤️
+            <br><br>
+            I love you a lot.
+            <br><br>
+            I miss you so much.
+            <br><br>
+            Thank you for being in my life.
+            <br><br>
+            Forever Yours ❤️
+        </p>
+    </div>
+
+    <button onclick="showPage(1)">
+        ❤️ Start Again ❤️
+    </button>
+</div>
+
+<script>
+
+function showPage(pageNumber){
+
+    var pages = document.getElementsByClassName("page");
+
+    for(var i=0;i<pages.length;i++){
+        pages[i].classList.remove("active");
+    }
+
+    document.getElementById("page"+pageNumber)
+    .classList.add("active");
+}
+
+</script>
+
+</body>
+</html>
